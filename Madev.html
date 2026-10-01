@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu ❤️</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #2b0a1a 0%, #4a0e2c 50%, #7a1e45 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    background: linear-gradient(160deg, #6b1e3f, #4a0e2c);
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    border-radius: 25px;
+    padding: 30px 22px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(233, 30, 99, 0.35);
+    animation: muncul 1s ease;
+    position: relative;
+    z-index: 2;
+  }
+
+  @keyframes muncul {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 10px rgba(255, 105, 180, 0.6);
+  }
+
+  .sub {
+    color: #ffb3d1;
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .pesan {
+    color: #f5d8e5;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    padding: 0 5px;
+  }
+
+  /* ===== VIDEO ===== */
+  .video-wrapper {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    margin-bottom: 18px;
+    background: #000;
+    aspect-ratio: 16 / 9;
+    position: relative;
+  }
+
+  .video-wrapper video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    object-fit: cover;
+  }
+
+  /* Tombol putar video */
+  .btn-play {
+    background: linear-gradient(135deg, #ff6b9d, #e91e63);
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.5);
+    margin-bottom: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-play:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(233, 30, 99, 0.7);
+  }
+
+  .btn-play:active { transform: scale(0.97); }
+
+  /* ===== TOMBOL MENU ===== */
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .buttons button {
+    background: linear-gradient(135deg, #ff6b9d, #e91e63);
+    color: white;
+    border: none;
+    padding: 13px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 6px 15px rgba(233, 30, 99, 0.4);
+  }
+
+  .buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(233, 30, 99, 0.6);
+  }
+
+  .buttons button:active { transform: scale(0.96); }
+
+  /* Pesan rahasia */
+  .pesan-rahasia {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #ffd1e3;
+    line-height: 1.6;
+    min-height: 45px;
+    padding: 15px;
+    background: rgba(255, 105, 180, 0.15);
+    border: 1px solid rgba(255, 105, 180, 0.35);
+    border-radius: 15px;
+    display: none;
+    animation: muncul 0.5s ease;
+  }
+
+  .hati {
+    position: fixed;
+    font-size: 24px;
+    animation: naik 5s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+    bottom: -50px;
+  }
+
+  @keyframes naik {
+    0% { transform: translateY(0) rotate(0deg)pacity: 1; }
+    100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+  }
+
+  .footer {
+    margin-top: 18px;
+    font-size: 12px;
+    color: #ff8ab8;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Untuk Kamu</h1>
+    <p class="sub">Seseorang yang sangat berarti ✨</p>
+
+    <p class="pesan">
+      Aku mungkin tidak selalu pandai mengatakan apa yang aku rasakan.<br>
+      Tapi ada satu hal yang ingin aku sampaikan:<br><br>
+      <strong>Terima kasih sudah hadir.</strong> Terima kasih untuk setiap senyum, cerita, perhatian, dan setiap momen kecil yang membuat hari terasa lebih indah.<br><br>
+      Semoga kita selalu bisa menjaga hal-hal baik yang sudah kita punya. ❤️
+    </p>
+
+    <!-- ================================================ -->
+    <!-- 🎬 GANTI VIDEO DI SINI — LANGSUNG DI BARIS src   -->
+    <!-- ================================================ -->
+    <!--
+      Cara ganti video:
+      1. Taruh file video (misal: kita.mp4) di folder yang SAMA dengan file HTML ini
+      2. Ganti "VIDEO_DISINI.mp4" di bawah jadi nama file video kamu
+         Contoh: src="kita.mp4"
+      3. Kalau pakai YouTube, ganti <video>...</video> jadi <iframe> (lihat komentar bawah)
+    -->
+    <div class="video-wrapper">
+      <video id="videoPacar" controls playsinline preload="metadata">
+        <!-- ⬇️⬇️⬇️ GANTI NAMA FILE VIDEO DI BAWAH INI ⬇️⬇️⬇️ -->
+        <source src="mygirl.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+    </div>
+
+    <!--
+      ====== VERSI YOUTUBE (kalau mau pakai YouTube) ======
+      Hapus <div class="video-wrapper"> di atas, ganti dengan ini:
+      Ganti VIDEO_ID dengan kode video YouTube kamu
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    -->
+
+    <!-- 🎬 TOMBOL PUTAR VIDEO -->
+    <button class="btn-play" onclick="putarVideo()" id="btnPlay">
+      ▶️ Putar Video
+    </button>
+
+    <!-- ================================================ -->
+
+    <div class="buttons">
+      <button onclick="pesan(1)">💖 Untuk Kamu</button>
+      <button onclick="pesan(2)">🥰 Tentang Kamu</button>
+      <button onclick="pesan(3)">🌹 Kata Manis</button>
+      <button onclick="pesan(4)">✨ Sebuah Pesan</button>
+      <button onclick="pesan(5)">💌 Buka Pesan</button>
+      <button onclick="pesan(6)">❤️ Kenapa Kamu</button>
+    </div>
+
+    <button class="btn-play" onclick="pesan(7)" style="margin-bottom:0;">🌅 Selamat Pagi</button>
+
+    <p class="pesan-rahasia" id="pesanRahasia"></p>
+
+    <p class="footer">Tekan salah satu tombol di atas ❤️</p>
+  </div>
+
+<script>
+  // ====== DAFTAR PESAN ======
+  const pesanList = {
+    1: "Aku sayang kamu, hari ini, besok, dan selamanya 💖",
+    2: "Kamu itu orang yang paling bikin aku nyaman. Terima kasih sudah jadi rumah buat aku 🥰",
+    3: "Kamu lebih manis dari semua kata manis yang pernah ada 🌹",
+    4: "Apapun yang terjadi, aku mau kita selalu bareng. Jangan kemana-mana ya ✨",
+    5: "jangan lupa makan sayang, jangan minum es 😳❤️",
+    6: "Kenapa kamu? Karena kamu satu-satunya yang bikin aku pengen jadi lebih baik setiap hari ❤️",
+    7: "Selamat pagi sayang! Semoga harimu seindah senyum kamu 🌅💕"
+  };
+
+  // ====== FUNGSI TOMBOL PESAN ======
+  function pesan(nomor) {
+    const box = document.getElementById('pesanRahasia');
+    box.style.display = 'block';
+    box.textContent = pesanList[nomor];
+    for (let i = 0; i < 10; i++) {
+      setTimeout(buatHati, i * 70);
+    }
+  }
+
+  // ====== FUNGSI TOMBOL PUTAR VIDEO ======
+  function putarVideo() {
+    const video = document.getElementById('videoPacar');
+    const btn = document.getElementById('btnPlay');
+
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = '⏸️ Jeda Video';
+    } else {
+      video.pause();
+      btn.innerHTML = '▶️ Putar Video';
+    }
+
+    // Balikin tulisan tombol kalau video selesai
+    video.onended = function() {
+      btn.innerHTML = '▶️ Putar Video';
+    };
+  }
+
+  // ====== HATI BETERBANGAN ======
+  function buatHati() {
+    const hati = document.createElement('div');
+    hati.className = 'hati';
+    hati.textContent = ['❤️','💕','💖','💗','💓','💘'][Math.floor(Math.random()*6)];
+    hati.style.left = Math.random() * 100 + 'vw';
+    hati.style.animationDuration = (Math.random() * 3 + 3) + 's';
+    hati.style.fontSize = (Math.random() * 20 + 15) + 'px';
+    document.body.appendChild(hati);
+    setTimeout(() => hati.remove(), 6500);
+  }
+
+  setInterval(buatHati, 600);
+</script>
+
+</body>
+</html>
